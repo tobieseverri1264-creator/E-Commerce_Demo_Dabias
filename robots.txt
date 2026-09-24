@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+# SEO local — Vértice San Nicolás de los Arroyos
 Sitemap: https://vertice-sn.com.ar/sitemap.xml
