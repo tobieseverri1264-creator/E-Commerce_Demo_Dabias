@@ -1,22 +1,23 @@
 /* ===== PRODUCTS DATA ===== */
 const products = [
-  { id: 1, name: "Auriculares Bluetooth Pro", desc: "Cancelación de ruido y 30 hs de batería.", category: "electronica", price: 89999, originalPrice: 109999, image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=max&w=600&q=70", badge: "Oferta", colors: ["#1d1d1f", "#e5e5ea", "#0071e3"], featured: true, stock: 12 },
-  { id: 2, name: "Smartwatch Sport", desc: "GPS, ritmo cardíaco y resistencia al agua.", category: "electronica", price: 124999, originalPrice: null, image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=max&w=600&q=70", badge: "Nuevo", colors: ["#1d1d1f", "#f5f5f7"], featured: true, stock: 8 },
-  { id: 3, name: "Lámpara de pie minimal", desc: "Luz cálida regulable, ideal living.", category: "hogar", price: 67999, originalPrice: 79999, image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=max&w=600&q=70", badge: "Oferta", colors: ["#f5f5f7", "#1d1d1f"], featured: true, stock: 5 },
-  { id: 4, name: "Set de sábanas premium", desc: "Algodón 300 hilos, varios tamaños.", category: "hogar", price: 45999, originalPrice: null, image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=max&w=600&q=70", badge: null, colors: ["#f5f5f7", "#d4a574", "#8b7355"], featured: false, stock: 20 },
-  { id: 5, name: "Zapatillas Urban Runner", desc: "Livianas, suela amortiguada.", category: "moda", price: 92999, originalPrice: 109999, image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=max&w=600&q=70", badge: "Oferta", colors: ["#e11d48", "#1d1d1f", "#f5f5f7"], featured: true, stock: 15 },
-  { id: 6, name: "Campera impermeable", desc: "Resistente al agua, unisex.", category: "moda", price: 118999, originalPrice: null, image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=max&w=600&q=70", badge: "Nuevo", colors: ["#1d1d1f", "#334155", "#0ea5e9"], featured: true, stock: 7 },
-  { id: 7, name: "Mancuernas 5 kg (par)", desc: "Agarre ergonómico, uso indoor.", category: "deportes", price: 34999, originalPrice: null, image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=max&w=600&q=70", badge: null, colors: ["#1d1d1f"], featured: false, stock: 25 },
-  { id: 8, name: "Botella térmica 750 ml", desc: "Mantiene frío 24 hs / calor 12 hs.", category: "deportes", price: 18999, originalPrice: 22999, image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=max&w=600&q=70", badge: "Oferta", colors: ["#0ea5e9", "#1d1d1f", "#f5f5f7"], featured: true, stock: 40 },
-  { id: 9, name: "Kit skincare diario", desc: "Limpieza + hidratación + protector.", category: "belleza", price: 52999, originalPrice: null, image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=max&w=600&q=70", badge: "Nuevo", colors: ["#f5f5f7", "#fce7f3"], featured: true, stock: 18 },
-  { id: 10, name: "Difusor de aromas", desc: "Ultrasónico, timer y LED suave.", category: "hogar", price: 27999, originalPrice: null, image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=max&w=600&q=70", badge: null, colors: ["#f5f5f7", "#1d1d1f"], featured: false, stock: 14 },
-  { id: 11, name: "Parlante portátil IPX7", desc: "Sonido 360°, batería 16 hs.", category: "electronica", price: 75999, originalPrice: 89999, image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=max&w=600&q=70", badge: "Oferta", colors: ["#1d1d1f", "#0071e3"], featured: false, stock: 9 },
-  { id: 12, name: "Mochila urbana 20 L", desc: "Compartimento notebook y USB.", category: "moda", price: 41999, originalPrice: null, image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=max&w=600&q=70", badge: null, colors: ["#1d1d1f", "#64748b"], featured: false, stock: 22 },
-  { id: 13, name: "Cafetera espresso compacta", desc: "Espuma de leche y café en 1 minuto.", category: "hogar", price: 159999, originalPrice: 189999, image: "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=max&w=600&q=70", badge: "Oferta", colors: ["#1d1d1f", "#f5f5f7"], featured: true, stock: 6 },
-  { id: 14, name: "Gorra classic snapback", desc: "Ajustable, bordado frontal.", category: "moda", price: 14999, originalPrice: null, image: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=max&w=600&q=70", badge: null, colors: ["#1d1d1f", "#dc2626", "#2563eb"], featured: false, stock: 50 },
-  { id: 15, name: "Colchoneta yoga antideslizante", desc: "6 mm, correa de transporte incluida.", category: "deportes", price: 24999, originalPrice: 29999, image: "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=max&w=600&q=70", badge: "Oferta", colors: ["#7c3aed", "#0f766e", "#1d1d1f"], featured: false, stock: 30 },
-  { id: 16, name: "Serum vitamina C", desc: "Ilumina y unifica el tono de la piel.", category: "belleza", price: 31999, originalPrice: null, image: "https://images.unsplash.com/photo-1620916568394-0c0db1f8b0b5?auto=format&fit=max&w=600&q=70", badge: "Nuevo", colors: ["#fef3c7", "#f5f5f7"], featured: true, stock: 3 },
+  { id: 1, name: "Auriculares Bluetooth Pro", desc: "Cancelación activa de ruido, 30 hs de batería y micrófono HD. Ideales para oficina y viaje.", category: "electronica", price: 89999, originalPrice: 109999, image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=max&w=600&q=70", badge: "Oferta", colors: ["#1d1d1f", "#e5e5ea", "#0071e3"], featured: true, stock: 12, brand: "Vértice", sku: "VT-AUD-001" },
+  { id: 2, name: "Smartwatch Sport", desc: "GPS integrado, monitor de ritmo cardíaco, SpO2 y resistencia al agua 5 ATM.", category: "electronica", price: 124999, originalPrice: null, image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=max&w=600&q=70", badge: "Nuevo", colors: ["#1d1d1f", "#f5f5f7"], featured: true, stock: 8, brand: "Vértice", sku: "VT-SW-002" },
+  { id: 3, name: "Lámpara de pie minimal", desc: "Luz LED cálida regulable, diseño minimalista ideal para living o escritorio.", category: "hogar", price: 67999, originalPrice: 79999, image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=max&w=600&q=70", badge: "Oferta", colors: ["#f5f5f7", "#1d1d1f"], featured: true, stock: 5, brand: "Vértice", sku: "VT-HOG-003" },
+  { id: 4, name: "Set de sábanas premium", desc: "Algodón 300 hilos, suave y resistente. Varios tamaños disponibles.", category: "hogar", price: 45999, originalPrice: null, image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=max&w=600&q=70", badge: null, colors: ["#f5f5f7", "#d4a574", "#8b7355"], featured: false, stock: 20, brand: "Vértice", sku: "VT-HOG-004" },
+  { id: 5, name: "Zapatillas Urban Runner", desc: "Livianas con suela amortiguada. Perfectas para running urbano y uso diario.", category: "moda", price: 92999, originalPrice: 109999, image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=max&w=600&q=70", badge: "Oferta", colors: ["#e11d48", "#1d1d1f", "#f5f5f7"], featured: true, stock: 15, brand: "Vértice", sku: "VT-MOD-005" },
+  { id: 6, name: "Campera impermeable", desc: "Membrana resistente al agua, unisex, ideal lluvia y viento. Capucha ajustable.", category: "moda", price: 118999, originalPrice: null, image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=max&w=600&q=70", badge: "Nuevo", colors: ["#1d1d1f", "#334155", "#0ea5e9"], featured: true, stock: 7, brand: "Vértice", sku: "VT-MOD-006" },
+  { id: 7, name: "Mancuernas 5 kg (par)", desc: "Agarre ergonómico antideslizante. Ideales para entrenamiento en casa.", category: "deportes", price: 34999, originalPrice: null, image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=max&w=600&q=70", badge: null, colors: ["#1d1d1f"], featured: false, stock: 25, brand: "Vértice", sku: "VT-DEP-007" },
+  { id: 8, name: "Botella térmica 750 ml", desc: "Acero inoxidable. Mantiene frío 24 hs / calor 12 hs. Libre de BPA.", category: "deportes", price: 18999, originalPrice: 22999, image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=max&w=600&q=70", badge: "Oferta", colors: ["#1d1d1f", "#0ea5e9", "#f5f5f7"], featured: false, stock: 40, brand: "Vértice", sku: "VT-DEP-008" },
+  { id: 9, name: "Kit skincare diario", desc: "Limpieza, tónico y crema hidratante. Rutina completa para todo tipo de piel.", category: "belleza", price: 52999, originalPrice: null, image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=max&w=600&q=70", badge: "Nuevo", colors: ["#f5f5f7", "#fce7f3"], featured: true, stock: 18, brand: "Vértice", sku: "VT-BEL-009" },
+  { id: 10, name: "Difusor de aromas", desc: "Ultrasónico con timer y LED suave. Capacidad 300 ml, apagado automático.", category: "hogar", price: 27999, originalPrice: null, image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=max&w=600&q=70", badge: null, colors: ["#f5f5f7", "#1d1d1f"], featured: false, stock: 14, brand: "Vértice", sku: "VT-HOG-010" },
+  { id: 11, name: "Parlante portátil IPX7", desc: "Sonido 360°, batería 16 hs e impermeable IPX7. Bluetooth 5.3.", category: "electronica", price: 75999, originalPrice: 89999, image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=max&w=600&q=70", badge: "Oferta", colors: ["#1d1d1f", "#0071e3"], featured: false, stock: 9, brand: "Vértice", sku: "VT-AUD-011" },
+  { id: 12, name: "Mochila urbana 20 L", desc: "Compartimento para notebook 15\", puerto USB y tela resistente al agua.", category: "moda", price: 41999, originalPrice: null, image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=max&w=600&q=70", badge: null, colors: ["#1d1d1f", "#64748b"], featured: false, stock: 22, brand: "Vértice", sku: "VT-MOD-012" },
+  { id: 13, name: "Cafetera espresso compacta", desc: "Espuma de leche y café listo en 1 minuto. Presión 15 bar, compacta.", category: "hogar", price: 159999, originalPrice: 189999, image: "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=max&w=600&q=70", badge: "Oferta", colors: ["#1d1d1f", "#f5f5f7"], featured: true, stock: 6, brand: "Vértice", sku: "VT-HOG-013" },
+  { id: 14, name: "Gorra classic snapback", desc: "Ajustable con bordado frontal. Algodón premium, unisex.", category: "moda", price: 14999, originalPrice: null, image: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=max&w=600&q=70", badge: null, colors: ["#1d1d1f", "#dc2626", "#2563eb"], featured: false, stock: 50, brand: "Vértice", sku: "VT-MOD-014" },
+  { id: 15, name: "Colchoneta yoga antideslizante", desc: "6 mm de espesor, correa de transporte incluida. Superficie antideslizante.", category: "deportes", price: 24999, originalPrice: 29999, image: "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=max&w=600&q=70", badge: "Oferta", colors: ["#7c3aed", "#0f766e", "#1d1d1f"], featured: false, stock: 30, brand: "Vértice", sku: "VT-DEP-015" },
+  { id: 16, name: "Serum vitamina C", desc: "Ilumina y unifica el tono. Fórmula con vitamina C estabilizada y ácido hialurónico.", category: "belleza", price: 31999, originalPrice: null, image: "https://images.unsplash.com/photo-1620916568394-0c0db1f8b0b5?auto=format&fit=max&w=600&q=70", badge: "Nuevo", colors: ["#fef3c7", "#f5f5f7"], featured: true, stock: 3, brand: "Vértice", sku: "VT-BEL-016" },
 ];
+
 
 const FREE_SHIPPING_THRESHOLD = 150000;
 const SHIPPING_COST = 8999;
@@ -42,6 +43,58 @@ const CATEGORY_LABELS = {
   deportes: "Deportes",
   belleza: "Belleza",
 };
+
+/* ===== PRODUCT SCHEMA (SEO) ===== */
+function injectProductSchemas() {
+  const existing = document.getElementById("product-schema-ld");
+  if (existing) existing.remove();
+  const list = products.slice(0, 8).map((p) => {
+    const avg = (() => {
+      const revs = getProductReviews(p.id);
+      if (!revs.length) return null;
+      const sum = revs.reduce((s, r) => s + r.rating, 0);
+      return Math.round((sum / revs.length) * 10) / 10;
+    })();
+    const offer = {
+      "@type": "Offer",
+      "url": "https://vertice-sn.com.ar/#productos",
+      "priceCurrency": "ARS",
+      "price": p.price,
+      "availability": p.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+      "itemCondition": "https://schema.org/NewCondition",
+      "seller": { "@type": "Organization", "name": "Vértice San Nicolás" }
+    };
+    const obj = {
+      "@type": "Product",
+      "name": p.name,
+      "description": p.desc,
+      "image": p.image,
+      "sku": p.sku || String(p.id),
+      "brand": { "@type": "Brand", "name": p.brand || "Vértice" },
+      "offers": offer
+    };
+    if (avg) {
+      obj.aggregateRating = {
+        "@type": "AggregateRating",
+        "ratingValue": avg,
+        "reviewCount": getProductReviews(p.id).length,
+        "bestRating": 5,
+        "worstRating": 1
+      };
+    }
+    return obj;
+  });
+  const script = document.createElement("script");
+  script.type = "application/ld+json";
+  script.id = "product-schema-ld";
+  script.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": list
+  });
+  document.head.appendChild(script);
+}
+
+
 
 
 /* ===== REVIEWS + MODERACIÓN ===== */
@@ -1715,3 +1768,9 @@ if (isReviewAdmin) {
 }
 updateModBadge();
 
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", function() { try { injectProductSchemas(); } catch(e){} });
+} else {
+  try { injectProductSchemas(); } catch(e){}
+}

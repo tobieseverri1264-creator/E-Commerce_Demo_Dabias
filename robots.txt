@@ -1,5 +1,13 @@
 User-agent: *
 Allow: /
 
+# Recursos estáticos
+Allow: /styles.css
+Allow: /script.js
+
 # SEO local — Vértice San Nicolás de los Arroyos
 Sitemap: https://vertice-sn.com.ar/sitemap.xml
+
+# Bloquear rutas internas de moderación / API si se exponen
+Disallow: /api/
+Disallow: /server/

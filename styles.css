@@ -1194,3 +1194,11 @@ body.promo-hidden .promo-bar { display: none; }
 @media (max-width: 600px) {
   .mod-fab { bottom: 90px; left: 16px; }
 }
+
+
+/* Print — SEO / accessibility */
+@media print {
+  .promo-bar, .navbar, .mod-fab, .cart-drawer, .search-overlay, .btn { display: none !important; }
+  body { color: #000; background: #fff; }
+  a[href]::after { content: " (" attr(href) ")"; font-size: 0.8em; }
+}
